@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import * as THREE from "https://unpkg.com/three@0.139.0/build/three.module.js";
-import textureImg from '../assets/texture_2.png';
+import textureImg from '../assets/8k_sun.jpg';
 
 const Prehome = () => {
 
@@ -35,7 +35,7 @@ const Prehome = () => {
 
       const animate = () => {
         requestAnimationFrame(animate);
-        sphere.rotation.x += 0.0005;
+        sphere.rotation.x += 0.0000;
         sphere.rotation.y += 0.0005;
         renderer.render(scene, camera);
       };
@@ -63,7 +63,7 @@ const Prehome = () => {
 
   return (
     <div>
-      <canvas id="globeCanvas"></canvas>
+      <canvas id="globeCanvas"/>
     </div>
   );
 };
